@@ -1,0 +1,6 @@
+encrypt:
+#  key: abcdefghijklmnopqrstuvexyz1234567890
+  key-store:
+    location: file:///C:\Users\dksek\IdeaProjects\hoon-msa\keystore\apiEncryptionKey.jks
+    password: test1234
+    alias: apiEncryptionKey

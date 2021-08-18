@@ -1,0 +1,28 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://C:\Users\dksek\IdeaProjects\hoon-msa\git-local-repo
+#          uri: https://github.com/hoon-msa/spring-cloud-config
+          #private일 경우 아이디와 비밀번호 입력해야함
+#          usename: [your username]
+#          password: [your password]
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
